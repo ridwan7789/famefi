@@ -2,7 +2,8 @@
   "nav": {
     "home": "Home",
     "earn": "Earn",
-    "connectWallet": "Connect Wallet"
+    "connectWallet": "Connect Wallet",
+    "launchApp": "Launch App"
   },
   "hero": {
     "title": "Create. Mint. Trade. Earn.",

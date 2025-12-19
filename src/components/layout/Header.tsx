@@ -38,8 +38,8 @@ export function Header() {
           <Link to="/" className="text-foreground/80 hover:text-primary transition-colors font-medium">
             {t("nav.home")}
           </Link>
-          <Link to="/earn" className="text-foreground/80 hover:text-primary transition-colors font-medium">
-            {t("nav.earn")}
+          <Link to="/how-it-works" className="text-foreground/80 hover:text-primary transition-colors font-medium">
+            How it Works
           </Link>
         </nav>
 
