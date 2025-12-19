@@ -8,6 +8,7 @@ import "@/i18n";
 import Index from "./pages/Index";
 import HowItWorks from "./pages/Earn";
 import NotFound from "./pages/NotFound";
+import SEO from "@/components/SEO";
 
 const queryClient = new QueryClient();
 
@@ -18,10 +19,37 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <SEO />
           <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/how-it-works" element={<HowItWorks />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="/" element={
+              <>
+                <SEO
+                  title="FameFi - Creator Economy Platform | Tokenize & Monetize Content"
+                  description="FameFi is a creator-first SocialFi protocol on Solana. Transform viral content into tradeable digital assets and earn rewards."
+                  keywords="creator economy, socialfi, blockchain, nft, solana, digital assets, content monetization, dca, viral content"
+                />
+                <Index />
+              </>
+            } />
+            <Route path="/how-it-works" element={
+              <>
+                <SEO
+                  title="How FameFi Works - Earn with Viral Content | FameFi"
+                  description="Learn how to create, mint, and earn with your digital content on FameFi. Step-by-step guide to the Creator Viral Reward Program."
+                  keywords="how famefi works, earn with content, viral reward program, creator monetization, socialfi guide"
+                />
+                <HowItWorks />
+              </>
+            } />
+            <Route path="*" element={
+              <>
+                <SEO
+                  title="Page Not Found - FameFi"
+                  description="The page you're looking for doesn't exist. Return to the FameFi homepage."
+                />
+                <NotFound />
+              </>
+            } />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>

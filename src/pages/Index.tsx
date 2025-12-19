@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Sparkles, Shield, Zap, Users, TrendingUp, ArrowRight, X, Check, Code, Map, Coins, HardDrive } from "lucide-react";
@@ -15,6 +15,8 @@ import instagramLogo from "@/assets/instagram-logo.jpg";
 import XLogo from "@/assets/X-logo.png";
 import youtubeLogo from "@/assets/youtube-logo.png";
 import tiktokLogo from "@/assets/tiktok-logo.avif";
+import { generateSchema, addSchema } from "@/utils/schema";
+import { useSEO } from '@/hooks/useSEO';
 
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
@@ -50,6 +52,125 @@ export default function Index() {
     { logo: youtubeLogo, alt: "YouTube", color: "bg-red-600" },
     { logo: tiktokLogo, alt: "TikTok", color: "bg-black" },
   ];
+
+  // Update SEO for this page
+  useSEO({
+    title: "FameFi - Creator Economy Platform | Tokenize & Monetize Content",
+    description: "FameFi is a creator-first SocialFi protocol on Solana. Transform viral content into tradeable digital assets and earn rewards.",
+    keywords: ["creator economy", "socialfi", "blockchain", "nft", "solana", "digital assets", "content monetization", "dca", "viral content", "web3", "crypto"],
+    canonical: "https://www.famefi.com/",
+    ogTitle: "FameFi - Creator Economy Platform",
+    ogDescription: "Transform viral content into tradeable digital assets and earn rewards with FameFi's Creator Viral Reward Program.",
+    ogImage: "/og-image.jpg",
+    ogUrl: "https://www.famefi.com/",
+    ogType: "website",
+    ogSiteName: "FameFi",
+    twitterCard: "summary_large_image",
+    twitterSite: "@famefi",
+    twitterCreator: "@famefi",
+    author: "FameFi Team",
+    robots: "index, follow",
+    viewport: "width=device-width, initial-scale=1",
+    themeColor: "#6366f1",
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "FameFi",
+      "description": "Creator-first SocialFi protocol on Solana that transforms viral content into tradeable digital assets",
+      "url": "https://www.famefi.com/",
+      "logo": "https://www.famefi.com/logo.png",
+      "sameAs": [
+        "https://twitter.com/famefi",
+        "https://instagram.com/famefi",
+        "https://tiktok.com/@famefi"
+      ],
+      "foundingDate": "2024",
+      "founders": [
+        {
+          "@type": "Person",
+          "name": "FameFi Team"
+        }
+      ],
+      "numberOfEmployees": "10-50",
+      "areaServed": "Worldwide",
+      "serviceType": "Blockchain Platform, SocialFi, Creator Economy",
+      "knowsLanguage": ["en", "es", "zh", "ko"]
+    }
+  });
+
+  useEffect(() => {
+    // Add schema markup for the homepage
+    const webSchema = generateSchema('WebSite', {
+      title: 'FameFi - Creator Economy Platform | Tokenize & Monetize Content',
+      description: 'FameFi is a creator-first SocialFi protocol on Solana. Transform viral content into tradeable digital assets and earn rewards.',
+      url: 'https://www.famefi.com/',
+    });
+    addSchema(webSchema);
+
+    // Add software application schema
+    const appSchema = generateSchema('SoftwareApplication', {});
+    addSchema(appSchema);
+
+    // Add FAQ schema with detailed questions
+    const faqSchema = generateSchema('FAQPage', {
+      questions: [
+        {
+          '@type': 'Question',
+          name: 'What is FameFi?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'FameFi is a creator-first SocialFi protocol built on Solana that empowers creators with on-chain ownership and fair monetization.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'How does FameFi work?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'FameFi allows creators to turn their viral content into tradeable on-chain assets called Digital Clip Assets (DCA) and earn rewards through the Creator Viral Reward Program.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'What is a Digital Clip Asset (DCA)?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'A Digital Clip Asset (DCA) is a unique NFT representing your viral content that can be minted on FameFi and traded in our marketplace.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'How can I earn rewards with FameFi?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'You can earn rewards by creating viral content that meets our criteria (10k+ views), minting it as a DCA, and participating in our Creator Viral Reward Program.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'Which blockchain does FameFi use?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'FameFi is built on Solana for its scalability and low transaction fees, making it accessible for all creators.'
+          }
+        }
+      ]
+    });
+    addSchema(faqSchema);
+
+    // Add breadcrumb schema
+    const breadcrumbSchema = generateSchema('BreadcrumbList', {
+      items: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: 'https://www.famefi.com/'
+        }
+      ]
+    });
+    addSchema(breadcrumbSchema);
+  }, []);
 
   return (
     <motion.div
@@ -95,10 +216,10 @@ export default function Index() {
               whileHover={{ y: -5 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
-              <h1 className="font-display text-5xl md:text-7xl font-bold mb-6">
+              <h1 className="font-display text-5xl md:text-7xl font-bold mb-6" itemProp="headline">
                 <span className="gradient-text">{t("hero.title")}</span>
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 max-w-lg">{t("hero.subtitle")}</p>
+              <p className="text-xl text-muted-foreground mb-8 max-w-lg" itemProp="description">{t("hero.subtitle")}</p>
               <div className="flex flex-wrap gap-4">
                 <Button
                   className="btn-neon-outline text-lg px-8 py-6"
@@ -125,7 +246,12 @@ export default function Index() {
             >
               <div className="relative mx-auto w-72 md:w-80">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-secondary rounded-3xl blur-2xl opacity-50 animate-pulse" />
-                <img src={mockupImg} alt="FameFi App" className="relative rounded-3xl shadow-2xl" />
+                <img
+                  src={mockupImg}
+                  alt="FameFi App - Creator Economy Platform"
+                  className="relative rounded-3xl shadow-2xl"
+                  itemProp="image"
+                />
               </div>
               {socialMediaLogos.map((media, i) => (
                 <motion.div
@@ -874,6 +1000,8 @@ export default function Index() {
                 transition={{ delay: i * 0.1 }}
                 whileHover={{ scale: 1.1, y: -10 }}
                 className="glass-card p-6 text-center hover:scale-105 transition-transform"
+                itemScope
+                itemType="https://schema.org/Organization"
               >
                 <div className="w-16 h-16 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center mx-auto mb-4">
                   <item.icon className="w-8 h-8 text-primary-foreground" />
@@ -886,7 +1014,7 @@ export default function Index() {
       </section>
 
       {/* Newsletter */}
-      <section className="py-24 bg-muted/30">
+      <section className="py-24 bg-muted/30" aria-labelledby="newsletter-title">
         <div className="container mx-auto px-4">
           <motion.div
             initial="hidden"
@@ -895,18 +1023,22 @@ export default function Index() {
             variants={fadeIn}
             className="max-w-2xl mx-auto text-center"
           >
-            <h2 className="font-display text-4xl font-bold mb-4 gradient-text">{t("newsletter.title")}</h2>
+            <h2 className="font-display text-4xl font-bold mb-4 gradient-text" id="newsletter-title">{t("newsletter.title")}</h2>
             <p className="text-xl text-muted-foreground mb-8">{t("newsletter.subtitle")}</p>
-            <div className="flex gap-4 max-w-md mx-auto">
-              <Input placeholder={t("newsletter.placeholder")} className="flex-1 bg-background" />
-              <Button className="btn-neon">{t("newsletter.button")}</Button>
+            <div className="flex gap-4 max-w-md mx-auto" role="group" aria-labelledby="newsletter-title">
+              <Input
+                placeholder={t("newsletter.placeholder")}
+                className="flex-1 bg-background"
+                aria-label="Email address for newsletter subscription"
+              />
+              <Button className="btn-neon" aria-describedby="newsletter-title">{t("newsletter.button")}</Button>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-24 relative overflow-hidden">
+      <section className="py-24 relative overflow-hidden" aria-labelledby="cta-title">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-accent/20 to-secondary/20" />
         <div className="container mx-auto px-4 relative z-10 text-center">
           <motion.div
@@ -915,7 +1047,7 @@ export default function Index() {
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeIn}
           >
-            <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 gradient-text">{t("cta.title")}</h2>
+            <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 gradient-text" id="cta-title">{t("cta.title")}</h2>
             <p className="text-xl text-muted-foreground mb-8">{t("cta.subtitle")}</p>
           </motion.div>
         </div>

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Wallet, Video, TrendingUp, Gift, Check, Sparkles, Users, Shield } from "lucide-react";
@@ -5,6 +6,8 @@ import CountUp from "react-countup";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
+import { generateSchema, addSchema } from "@/utils/schema";
+import { useSEO } from '@/hooks/useSEO';
 
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
@@ -21,9 +24,123 @@ const pageTransition = {
 export default function HowItWorks() {
   const { t } = useTranslation();
 
+  // Update SEO for this page
+  useSEO({
+    title: "How FameFi Works - Earn with Viral Content | FameFi",
+    description: "Learn how to create, mint, and earn with your digital content on FameFi. Step-by-step guide to the Creator Viral Reward Program.",
+    keywords: ["how famefi works", "creator viral reward program", "digital clip asset", "dca minting", "socialfi", "solana", "content monetization", "web3", "nft"],
+    canonical: "https://www.famefi.com/how-it-works",
+    ogTitle: "How FameFi Works - Earn with Viral Content",
+    ogDescription: "Learn how to create, mint, and earn with your digital content on FameFi. Step-by-step guide to the Creator Viral Reward Program.",
+    ogImage: "/og-image.jpg",
+    ogUrl: "https://www.famefi.com/how-it-works",
+    ogType: "article",
+    ogSiteName: "FameFi",
+    twitterCard: "summary_large_image",
+    twitterSite: "@famefi",
+    twitterCreator: "@famefi",
+    author: "FameFi Team",
+    robots: "index, follow",
+    viewport: "width=device-width, initial-scale=1",
+    themeColor: "#6366f1",
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.famefi.com/how-it-works"
+      },
+      "headline": "How FameFi Works - Earn with Viral Content",
+      "description": "Learn how to create, mint, and earn with your digital content on FameFi. Step-by-step guide to the Creator Viral Reward Program.",
+      "author": {
+        "@type": "Organization",
+        "name": "FameFi Team"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "FameFi",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.famefi.com/logo.png"
+        }
+      },
+      "datePublished": "2024-01-01",
+      "dateModified": new Date().toISOString(),
+      "articleSection": "Creator Guide"
+    }
+  });
+
   const handleWalletConnect = () => {
     window.open("https://phantom.app/", "_blank");
   };
+
+  useEffect(() => {
+    // Add schema markup for the how-it-works page
+    const webPageSchema = generateSchema('WebPage', {
+      title: 'How FameFi Works - Earn with Viral Content | FameFi',
+      description: 'Learn how to create, mint, and earn with your digital content on FameFi. Step-by-step guide to the Creator Viral Reward Program.',
+      url: 'https://www.famefi.com/how-it-works',
+    });
+    addSchema(webPageSchema);
+
+    // Add FAQ schema for the steps
+    const faqSchema = generateSchema('FAQPage', {
+      questions: [
+        {
+          '@type': 'Question',
+          name: 'How do I earn with FameFi?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'You can earn by creating viral content that features FameFi, achieving 10,000+ views, and minting your content as a Digital Clip Asset (DCA).'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'What is a Digital Clip Asset (DCA)?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'A Digital Clip Asset (DCA) is a unique NFT representing your viral content that can be minted on FameFi and traded in our marketplace.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'What platforms can I post my content on?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'You can post your content on TikTok, X (formerly Twitter), Instagram, or YouTube Shorts to participate in the Creator Viral Reward Program.'
+          }
+        },
+        {
+          '@type': 'Question',
+          name: 'How much can I earn?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'The Creator Viral Reward Program offers up to $20,000 in $FAME tokens for qualifying viral content that meets our criteria.'
+          }
+        }
+      ]
+    });
+    addSchema(faqSchema);
+
+    // Add breadcrumb schema
+    const breadcrumbSchema = generateSchema('BreadcrumbList', {
+      items: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: 'https://www.famefi.com/'
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'How It Works',
+          item: 'https://www.famefi.com/how-it-works'
+        }
+      ]
+    });
+    addSchema(breadcrumbSchema);
+  }, []);
 
   return (
     <motion.div
@@ -37,7 +154,7 @@ export default function HowItWorks() {
       <Header />
 
       {/* Hero */}
-      <section className="relative min-h-[60vh] flex items-center justify-center pt-20 overflow-hidden">
+      <section className="relative min-h-[60vh] flex items-center justify-center pt-20 overflow-hidden" aria-labelledby="hero-title">
         {/* Video Background */}
         <div className="absolute inset-0 z-0">
           <video
@@ -47,6 +164,7 @@ export default function HowItWorks() {
             playsInline
             className="w-full h-full object-cover opacity-20"
             onContextMenu={(e) => e.preventDefault()}
+            aria-label="Animated background video"
           >
             <source src={new URL('@/assets/fameclips.mp4', import.meta.url).href} type="video/mp4" />
             Your browser does not support the video tag.
@@ -67,14 +185,14 @@ export default function HowItWorks() {
             transition={{ duration: 0.8, delay: 0.2 }}
             whileHover={{ y: -5 }}
           >
-            <h1 className="font-display text-5xl md:text-7xl font-bold mb-6 gradient-text">How It Works</h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">A step-by-step guide to creating, minting, and earning with your digital content</p>
+            <h1 className="font-display text-5xl md:text-7xl font-bold mb-6 gradient-text" itemProp="headline" id="hero-title">How It Works</h1>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto" itemProp="description">A step-by-step guide to creating, minting, and earning with your digital content</p>
           </motion.div>
         </div>
       </section>
 
       {/* Process Overview */}
-      <section className="py-24">
+      <section className="py-24" aria-labelledby="process-title">
         <div className="container mx-auto px-4">
           <motion.div
             initial="hidden"
@@ -83,7 +201,7 @@ export default function HowItWorks() {
             variants={fadeIn}
             className="text-center mb-16"
           >
-            <h2 className="font-display text-4xl font-bold mb-4 gradient-text">The FameFi Process</h2>
+            <h2 className="font-display text-4xl font-bold mb-4 gradient-text" id="process-title">The FameFi Process</h2>
             <p className="text-xl text-muted-foreground">Transform your content into on-chain assets and earn rewards</p>
           </motion.div>
 
@@ -134,6 +252,7 @@ export default function HowItWorks() {
                   transition={{ delay: 0.1 * i, duration: 0.5 }}
                   whileHover={{ x: 5 }}
                   className="flex items-center gap-4 mb-4 last:mb-0"
+                  role="listitem"
                 >
                   <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center flex-shrink-0">
                     <Check className="w-5 h-5 text-primary-foreground" />
@@ -147,7 +266,7 @@ export default function HowItWorks() {
       </section>
 
       {/* Why It Matters */}
-      <section className="py-24 bg-muted/30">
+      <section className="py-24 bg-muted/30" aria-labelledby="why-matters-title">
         <div className="container mx-auto px-4">
           <motion.h2
             initial="hidden"
@@ -155,6 +274,7 @@ export default function HowItWorks() {
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeIn}
             className="font-display text-4xl font-bold text-center mb-16 gradient-text"
+            id="why-matters-title"
           >
             Why This Matters
           </motion.h2>
@@ -174,12 +294,16 @@ export default function HowItWorks() {
                 transition={{ delay: i * 0.1 }}
                 whileHover={{ scale: 1.05, y: -10 }}
                 className="glass-card p-8 text-center hover:scale-105 transition-transform"
+                itemScope
+                itemType="https://schema.org/FAQPage"
+                role="region"
+                aria-labelledby={`why-matters-${i}`}
               >
                 <div className="w-16 h-16 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center mx-auto mb-6">
                   <item.icon className="w-8 h-8 text-primary-foreground" />
                 </div>
-                <h3 className="font-display text-xl font-bold mb-3">{item.title}</h3>
-                <p className="text-muted-foreground">{item.desc}</p>
+                <h3 className="font-display text-xl font-bold mb-3" itemProp="name" id={`why-matters-${i}`}>{item.title}</h3>
+                <p className="text-muted-foreground" itemProp="text">{item.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -187,7 +311,7 @@ export default function HowItWorks() {
       </section>
 
       {/* Step-by-Step Guide */}
-      <section className="py-24">
+      <section className="py-24" aria-labelledby="step-guide-title">
         <div className="container mx-auto px-4">
           <motion.h2
             initial="hidden"
@@ -195,6 +319,7 @@ export default function HowItWorks() {
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeIn}
             className="font-display text-4xl font-bold text-center mb-16 gradient-text"
+            id="step-guide-title"
           >
             Step-by-Step Guide
           </motion.h2>
@@ -221,6 +346,10 @@ export default function HowItWorks() {
                 transition={{ delay: i * 0.15 }}
                 whileHover={{ scale: 1.05, y: -10 }}
                 className="glass-card p-6 relative"
+                itemScope
+                itemType="https://schema.org/HowToItem"
+                role="region"
+                aria-labelledby={`step-${item.step}`}
               >
                 <div className="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center font-display font-bold text-primary-foreground">
                   {item.step}
@@ -228,8 +357,8 @@ export default function HowItWorks() {
                 <div className="w-12 h-12 rounded-xl bg-muted flex items-center justify-center mb-4 mt-2">
                   <item.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-display font-bold mb-2">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.desc}</p>
+                <h3 className="font-display font-bold mb-2" itemProp="name" id={`step-${item.step}`}>{item.title}</h3>
+                <p className="text-sm text-muted-foreground" itemProp="description">{item.desc}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -242,7 +371,7 @@ export default function HowItWorks() {
             whileHover={{ scale: 1.03 }}
             className="text-center mt-12"
           >
-            <Button onClick={handleWalletConnect} className="btn-neon text-lg px-10 py-6">
+            <Button onClick={handleWalletConnect} className="btn-neon text-lg px-10 py-6" aria-label="Connect your wallet to get started">
               <Wallet className="mr-2 w-5 h-5" /> Connect Wallet
             </Button>
           </motion.div>
