@@ -58,11 +58,11 @@ export default function Index() {
     title: "FameFi - Creator Economy Platform | Tokenize & Monetize Content",
     description: "FameFi is a creator-first SocialFi protocol on Solana. Transform viral content into tradeable digital assets and earn rewards.",
     keywords: ["creator economy", "socialfi", "blockchain", "nft", "solana", "digital assets", "content monetization", "dca", "viral content", "web3", "crypto"],
-    canonical: "https://www.famefi.com/",
+    canonical: "https://www.famefi.pro/",
     ogTitle: "FameFi - Creator Economy Platform",
     ogDescription: "Transform viral content into tradeable digital assets and earn rewards with FameFi's Creator Viral Reward Program.",
     ogImage: "/og-image.jpg",
-    ogUrl: "https://www.famefi.com/",
+    ogUrl: "https://www.famefi.pro/",
     ogType: "website",
     ogSiteName: "FameFi",
     twitterCard: "summary_large_image",
@@ -77,8 +77,8 @@ export default function Index() {
       "@type": "Organization",
       "name": "FameFi",
       "description": "Creator-first SocialFi protocol on Solana that transforms viral content into tradeable digital assets",
-      "url": "https://www.famefi.com/",
-      "logo": "https://www.famefi.com/logo.png",
+      "url": "https://www.famefi.pro/",
+      "logo": "https://www.famefi.pro/logo.png",
       "sameAs": [
         "https://twitter.com/famefi",
         "https://instagram.com/famefi",
@@ -103,7 +103,7 @@ export default function Index() {
     const webSchema = generateSchema('WebSite', {
       title: 'FameFi - Creator Economy Platform | Tokenize & Monetize Content',
       description: 'FameFi is a creator-first SocialFi protocol on Solana. Transform viral content into tradeable digital assets and earn rewards.',
-      url: 'https://www.famefi.com/',
+      url: 'https://www.famefi.pro/',
     });
     addSchema(webSchema);
 
@@ -165,7 +165,7 @@ export default function Index() {
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: 'https://www.famefi.com/'
+          item: 'https://www.famefi.pro/'
         }
       ]
     });

@@ -7,8 +7,8 @@ export const generateSchema = (type: string, data: any) => {
         '@type': 'Organization',
         name: data.name || 'FameFi',
         legalName: data.legalName || 'FameFi Protocol',
-        url: data.url || 'https://www.famefi.com',
-        logo: data.logo || 'https://www.famefi.com/logo.png',
+        url: data.url || 'https://www.famefi.pro',
+        logo: data.logo || 'https://www.famefi.pro/logo.png',
         foundingDate: data.foundingDate || '2024',
         founders: data.founders || [
           {
@@ -37,11 +37,11 @@ export const generateSchema = (type: string, data: any) => {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
         name: data.name || 'FameFi - Creator Economy Platform',
-        url: data.url || 'https://www.famefi.com',
+        url: data.url || 'https://www.famefi.pro',
         description: data.description || 'A decentralized platform for creators to tokenize and monetize their digital content on Solana',
         potentialAction: {
           '@type': 'SearchAction',
-          target: 'https://www.famefi.com/search?q={search_term_string}',
+          target: 'https://www.famefi.pro/search?q={search_term_string}',
           'query-input': 'required name=search_term_string',
         },
         publisher: {
@@ -56,7 +56,7 @@ export const generateSchema = (type: string, data: any) => {
         '@type': 'WebPage',
         name: data.title || 'FameFi - Creator Economy Platform',
         description: data.description || 'A decentralized platform for creators to tokenize and monetize their digital content',
-        url: data.url || 'https://www.famefi.com',
+        url: data.url || 'https://www.famefi.pro',
         datePublished: data.publishedTime || '2024-01-01',
         dateModified: data.modifiedTime || new Date().toISOString(),
         author: {
@@ -68,7 +68,7 @@ export const generateSchema = (type: string, data: any) => {
           name: data.publisherName || 'FameFi',
           logo: {
             '@type': 'ImageObject',
-            url: data.publisherLogo || 'https://www.famefi.com/logo.png',
+            url: data.publisherLogo || 'https://www.famefi.pro/logo.png',
           },
         },
         breadcrumb: data.breadcrumb || undefined

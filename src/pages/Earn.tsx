@@ -29,11 +29,11 @@ export default function HowItWorks() {
     title: "How FameFi Works - Earn with Viral Content | FameFi",
     description: "Learn how to create, mint, and earn with your digital content on FameFi. Step-by-step guide to the Creator Viral Reward Program.",
     keywords: ["how famefi works", "creator viral reward program", "digital clip asset", "dca minting", "socialfi", "solana", "content monetization", "web3", "nft"],
-    canonical: "https://www.famefi.com/how-it-works",
+    canonical: "https://www.famefi.pro/how-it-works",
     ogTitle: "How FameFi Works - Earn with Viral Content",
     ogDescription: "Learn how to create, mint, and earn with your digital content on FameFi. Step-by-step guide to the Creator Viral Reward Program.",
     ogImage: "/og-image.jpg",
-    ogUrl: "https://www.famefi.com/how-it-works",
+    ogUrl: "https://www.famefi.pro/how-it-works",
     ogType: "article",
     ogSiteName: "FameFi",
     twitterCard: "summary_large_image",
@@ -48,7 +48,7 @@ export default function HowItWorks() {
       "@type": "Article",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.famefi.com/how-it-works"
+        "@id": "https://www.famefi.pro/how-it-works"
       },
       "headline": "How FameFi Works - Earn with Viral Content",
       "description": "Learn how to create, mint, and earn with your digital content on FameFi. Step-by-step guide to the Creator Viral Reward Program.",
@@ -61,7 +61,7 @@ export default function HowItWorks() {
         "name": "FameFi",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.famefi.com/logo.png"
+          "url": "https://www.famefi.pro/logo.png"
         }
       },
       "datePublished": "2024-01-01",
@@ -79,7 +79,7 @@ export default function HowItWorks() {
     const webPageSchema = generateSchema('WebPage', {
       title: 'How FameFi Works - Earn with Viral Content | FameFi',
       description: 'Learn how to create, mint, and earn with your digital content on FameFi. Step-by-step guide to the Creator Viral Reward Program.',
-      url: 'https://www.famefi.com/how-it-works',
+      url: 'https://www.famefi.pro/how-it-works',
     });
     addSchema(webPageSchema);
 
@@ -129,13 +129,13 @@ export default function HowItWorks() {
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: 'https://www.famefi.com/'
+          item: 'https://www.famefi.pro/'
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'How It Works',
-          item: 'https://www.famefi.com/how-it-works'
+          item: 'https://www.famefi.pro/how-it-works'
         }
       ]
     });

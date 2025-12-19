@@ -6,7 +6,7 @@
   
   <!-- Homepage -->
   <url>
-    <loc>https://www.famefi.com/</loc>
+    <loc>https://www.famefi.pro/</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
   
   <!-- How It Works Page -->
   <url>
-    <loc>https://www.famefi.com/how-it-works</loc>
+    <loc>https://www.famefi.pro/how-it-works</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -22,42 +22,42 @@
   
   <!-- Additional pages that might be added later -->
   <url>
-    <loc>https://www.famefi.com/tokenomics</loc>
+    <loc>https://www.famefi.pro/tokenomics</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://www.famefi.com/roadmap</loc>
+    <loc>https://www.famefi.pro/roadmap</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://www.famefi.com/ecosystem</loc>
+    <loc>https://www.famefi.pro/ecosystem</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://www.famefi.com/faq</loc>
+    <loc>https://www.famefi.pro/faq</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.famefi.com/privacy</loc>
+    <loc>https://www.famefi.pro/privacy</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://www.famefi.com/terms</loc>
+    <loc>https://www.famefi.pro/terms</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
