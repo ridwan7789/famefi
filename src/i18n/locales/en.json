@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "home": "Home",
+    "earn": "Earn",
+    "connectWallet": "Connect Wallet"
+  },
+  "hero": {
+    "title": "Create. Mint. Trade. Earn.",
+    "subtitle": "Turn your short clips into on-chain digital assets and unlock a new SocialFi economy on Solana.",
+    "launchApp": "Launch App",
+    "mintClip": "Mint Your Clip",
+    "joinCreators": "Join Creators"
+  },
+  "whatIs": {
+    "title": "What is FameFi?",
+    "subtitle": "A creator-first SocialFi protocol built on Solana",
+    "card1Title": "Creator SocialFi Protocol",
+    "card1Desc": "Empowering creators with on-chain ownership and fair monetization.",
+    "card2Title": "Digital Clip Assets",
+    "card2Desc": "Transform your viral content into tradeable on-chain assets.",
+    "card3Title": "Own & Monetize",
+    "card3Desc": "True ownership means you control your content and earnings.",
+    "card4Title": "Built on Solana",
+    "card4Desc": "Lightning-fast transactions with near-zero fees."
+  },
+  "problem": {
+    "title": "The Problem with Web2",
+    "web2Title": "Web2 Platforms",
+    "web2Point1": "Centralized ownership",
+    "web2Point2": "Unfair revenue share",
+    "web2Point3": "Creators lose upside",
+    "web2Point4": "Platform controls your content",
+    "web3Title": "FameFi Solution",
+    "web3Point1": "On-chain ownership",
+    "web3Point2": "Transparent royalties",
+    "web3Point3": "Viral reward economy",
+    "web3Point4": "You own your content"
+  },
+  "reward": {
+    "title": "Creator Viral Reward",
+    "amount": "$1,500",
+    "perClip": "per viral clip",
+    "inFame": "in $FAME tokens"
+  },
+  "ecosystem": {
+    "title": "The FameFi Ecosystem",
+    "subtitle": "A thriving economy connecting all participants",
+    "creators": "Creators",
+    "collectors": "Collectors",
+    "communities": "Communities",
+    "brands": "Brands",
+    "investors": "Investors"
+  },
+  "newsletter": {
+    "title": "Stay Updated",
+    "subtitle": "Join our newsletter for exclusive updates, airdrops, and early access.",
+    "placeholder": "Enter your email",
+    "button": "Subscribe",
+    "success": "Thanks for subscribing!",
+    "error": "Something went wrong. Please try again."
+  },
+  "cta": {
+    "title": "The future of creator economy is on-chain.",
+    "subtitle": "Join the revolution and start earning from your creativity."
+  },
+  "earn": {
+    "heroTitle": "Earn with FameFi",
+    "heroSubtitle": "Turn your viral content into real rewards",
+    "programTitle": "Creator Viral Incentive Program",
+    "programSubtitle": "Get rewarded for creating content that goes viral",
+    "reward": "$1,500 USD equivalent in $FAME",
+    "eligibilityTitle": "Eligibility Criteria",
+    "criteria1": "Uses or references FameFi in content",
+    "criteria2": "Posted on TikTok, X, Instagram, or YouTube Shorts",
+    "criteria3": "Minimum 10,000 views",
+    "criteria4": "Verified viral / FYP status",
+    "criteria5": "Content minted as DCA on FameFi",
+    "whyTitle": "Why It Matters",
+    "why1Title": "Real Social Impact",
+    "why1Desc": "Your creativity drives real value and real rewards",
+    "why2Title": "No Middlemen",
+    "why2Desc": "Direct rewards without platform fees eating your earnings",
+    "why3Title": "On-Chain Verification",
+    "why3Desc": "Transparent, verifiable reward distribution",
+    "howTitle": "How to Claim Your Reward",
+    "step1Title": "Create Viral Content",
+    "step1Desc": "Create content featuring or referencing FameFi",
+    "step2Title": "Go Viral",
+    "step2Desc": "Hit 10,000+ views and verified viral status",
+    "step3Title": "Mint Your DCA",
+    "step3Desc": "Mint your content as a Digital Clip Asset",
+    "step4Title": "Claim Rewards",
+    "step4Desc": "Connect wallet and claim your $FAME tokens"
+  },
+  "footer": {
+    "tagline": "Creator SocialFi Protocol on Solana",
+    "disclaimer": "Cryptocurrency investments involve high risk. Please do your own research before investing.",
+    "app": "Launch App",
+    "docs": "Documentation",
+    "twitter": "Twitter",
+    "telegram": "Telegram",
+    "discord": "Discord"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "home": "首页",
+    "earn": "赚取",
+    "connectWallet": "连接钱包"
+  },
+  "hero": {
+    "title": "创作。铸造。交易。赚取。",
+    "subtitle": "将您的短视频转化为链上数字资产，解锁 Solana 上的全新 SocialFi 经济。",
+    "launchApp": "启动应用",
+    "mintClip": "铸造您的视频",
+    "joinCreators": "加入创作者"
+  },
+  "whatIs": {
+    "title": "什么是 FameFi？",
+    "subtitle": "建立在 Solana 上的创作者优先 SocialFi 协议",
+    "card1Title": "创作者 SocialFi 协议",
+    "card1Desc": "为创作者提供链上所有权和公平的变现方式。",
+    "card2Title": "数字剪辑资产",
+    "card2Desc": "将您的病毒式内容转化为可交易的链上资产。",
+    "card3Title": "拥有并变现",
+    "card3Desc": "真正的所有权意味着您控制您的内容和收益。",
+    "card4Title": "建立在 Solana",
+    "card4Desc": "极速交易，接近零手续费。"
+  },
+  "problem": {
+    "title": "Web2 的问题",
+    "web2Title": "Web2 平台",
+    "web2Point1": "中心化所有权",
+    "web2Point2": "不公平的收入分成",
+    "web2Point3": "创作者失去收益",
+    "web2Point4": "平台控制您的内容",
+    "web3Title": "FameFi 解决方案",
+    "web3Point1": "链上所有权",
+    "web3Point2": "透明的版税",
+    "web3Point3": "病毒式奖励经济",
+    "web3Point4": "您拥有您的内容"
+  },
+  "reward": {
+    "title": "创作者病毒式奖励",
+    "amount": "$1,500",
+    "perClip": "每个病毒式视频",
+    "inFame": "$FAME 代币"
+  },
+  "ecosystem": {
+    "title": "FameFi 生态系统",
+    "subtitle": "连接所有参与者的繁荣经济",
+    "creators": "创作者",
+    "collectors": "收藏家",
+    "communities": "社区",
+    "brands": "品牌",
+    "investors": "投资者"
+  },
+  "newsletter": {
+    "title": "保持更新",
+    "subtitle": "加入我们的通讯，获取独家更新、空投和提前访问。",
+    "placeholder": "输入您的邮箱",
+    "button": "订阅",
+    "success": "感谢订阅！",
+    "error": "出了点问题，请重试。"
+  },
+  "cta": {
+    "title": "创作者经济的未来在链上。",
+    "subtitle": "加入革命，开始从您的创意中赚取收益。"
+  },
+  "earn": {
+    "heroTitle": "用 FameFi 赚取",
+    "heroSubtitle": "将您的病毒式内容转化为真实奖励",
+    "programTitle": "创作者病毒式激励计划",
+    "programSubtitle": "创作病毒式内容获得奖励",
+    "reward": "等值 $1,500 美元的 $FAME",
+    "eligibilityTitle": "资格标准",
+    "criteria1": "内容中使用或提及 FameFi",
+    "criteria2": "发布在 TikTok、X、Instagram 或 YouTube Shorts",
+    "criteria3": "最少 10,000 次观看",
+    "criteria4": "验证的病毒式 / FYP 状态",
+    "criteria5": "内容在 FameFi 上铸造为 DCA",
+    "whyTitle": "为什么重要",
+    "why1Title": "真实的社会影响",
+    "why1Desc": "您的创意驱动真实的价值和真实的奖励",
+    "why2Title": "没有中间商",
+    "why2Desc": "直接奖励，无平台费用",
+    "why3Title": "链上验证",
+    "why3Desc": "透明、可验证的奖励分配",
+    "howTitle": "如何领取奖励",
+    "step1Title": "创作病毒式内容",
+    "step1Desc": "创作展示或提及 FameFi 的内容",
+    "step2Title": "走红",
+    "step2Desc": "达到 10,000+ 次观看和验证的病毒式状态",
+    "step3Title": "铸造您的 DCA",
+    "step3Desc": "将您的内容铸造为数字剪辑资产",
+    "step4Title": "领取奖励",
+    "step4Desc": "连接钱包并领取您的 $FAME 代币"
+  },
+  "footer": {
+    "tagline": "Solana 上的创作者 SocialFi 协议",
+    "disclaimer": "加密货币投资涉及高风险。请在投资前自行研究。",
+    "app": "启动应用",
+    "docs": "文档",
+    "twitter": "Twitter",
+    "telegram": "Telegram",
+    "discord": "Discord"
+  }
+}
