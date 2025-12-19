@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "earn": "Ganar",
+    "connectWallet": "Conectar Wallet"
+  },
+  "hero": {
+    "title": "Crea. Mintea. Comercia. Gana.",
+    "subtitle": "Convierte tus clips cortos en activos digitales on-chain y desbloquea una nueva economía SocialFi en Solana.",
+    "launchApp": "Lanzar App",
+    "mintClip": "Mintea tu Clip",
+    "joinCreators": "Únete a Creadores"
+  },
+  "whatIs": {
+    "title": "¿Qué es FameFi?",
+    "subtitle": "Un protocolo SocialFi centrado en creadores construido en Solana",
+    "card1Title": "Protocolo SocialFi para Creadores",
+    "card1Desc": "Empoderando creadores con propiedad on-chain y monetización justa.",
+    "card2Title": "Activos de Clips Digitales",
+    "card2Desc": "Transforma tu contenido viral en activos on-chain comerciables.",
+    "card3Title": "Posee y Monetiza",
+    "card3Desc": "La verdadera propiedad significa que controlas tu contenido y ganancias.",
+    "card4Title": "Construido en Solana",
+    "card4Desc": "Transacciones ultrarrápidas con tarifas casi nulas."
+  },
+  "problem": {
+    "title": "El Problema con Web2",
+    "web2Title": "Plataformas Web2",
+    "web2Point1": "Propiedad centralizada",
+    "web2Point2": "Reparto de ingresos injusto",
+    "web2Point3": "Creadores pierden ventajas",
+    "web2Point4": "La plataforma controla tu contenido",
+    "web3Title": "Solución FameFi",
+    "web3Point1": "Propiedad on-chain",
+    "web3Point2": "Regalías transparentes",
+    "web3Point3": "Economía de recompensas virales",
+    "web3Point4": "Tú eres dueño de tu contenido"
+  },
+  "reward": {
+    "title": "Recompensa Viral para Creadores",
+    "amount": "$1,500",
+    "perClip": "por clip viral",
+    "inFame": "en tokens $FAME"
+  },
+  "ecosystem": {
+    "title": "El Ecosistema FameFi",
+    "subtitle": "Una economía próspera conectando a todos los participantes",
+    "creators": "Creadores",
+    "collectors": "Coleccionistas",
+    "communities": "Comunidades",
+    "brands": "Marcas",
+    "investors": "Inversores"
+  },
+  "newsletter": {
+    "title": "Mantente Actualizado",
+    "subtitle": "Únete a nuestro boletín para actualizaciones exclusivas, airdrops y acceso anticipado.",
+    "placeholder": "Ingresa tu email",
+    "button": "Suscribirse",
+    "success": "¡Gracias por suscribirte!",
+    "error": "Algo salió mal. Por favor intenta de nuevo."
+  },
+  "cta": {
+    "title": "El futuro de la economía de creadores está on-chain.",
+    "subtitle": "Únete a la revolución y comienza a ganar con tu creatividad."
+  },
+  "earn": {
+    "heroTitle": "Gana con FameFi",
+    "heroSubtitle": "Convierte tu contenido viral en recompensas reales",
+    "programTitle": "Programa de Incentivos Virales para Creadores",
+    "programSubtitle": "Sé recompensado por crear contenido que se vuelve viral",
+    "reward": "$1,500 USD equivalente en $FAME",
+    "eligibilityTitle": "Criterios de Elegibilidad",
+    "criteria1": "Usa o menciona FameFi en el contenido",
+    "criteria2": "Publicado en TikTok, X, Instagram o YouTube Shorts",
+    "criteria3": "Mínimo 10,000 vistas",
+    "criteria4": "Estado viral / FYP verificado",
+    "criteria5": "Contenido minteado como DCA en FameFi",
+    "whyTitle": "Por Qué Importa",
+    "why1Title": "Impacto Social Real",
+    "why1Desc": "Tu creatividad genera valor y recompensas reales",
+    "why2Title": "Sin Intermediarios",
+    "why2Desc": "Recompensas directas sin tarifas de plataforma",
+    "why3Title": "Verificación On-Chain",
+    "why3Desc": "Distribución de recompensas transparente y verificable",
+    "howTitle": "Cómo Reclamar tu Recompensa",
+    "step1Title": "Crea Contenido Viral",
+    "step1Desc": "Crea contenido presentando o mencionando FameFi",
+    "step2Title": "Vuélvete Viral",
+    "step2Desc": "Alcanza 10,000+ vistas y estado viral verificado",
+    "step3Title": "Mintea tu DCA",
+    "step3Desc": "Mintea tu contenido como Activo de Clip Digital",
+    "step4Title": "Reclama Recompensas",
+    "step4Desc": "Conecta wallet y reclama tus tokens $FAME"
+  },
+  "footer": {
+    "tagline": "Protocolo SocialFi para Creadores en Solana",
+    "disclaimer": "Las inversiones en criptomonedas implican alto riesgo. Por favor investiga antes de invertir.",
+    "app": "Lanzar App",
+    "docs": "Documentación",
+    "twitter": "Twitter",
+    "telegram": "Telegram",
+    "discord": "Discord"
+  }
+}

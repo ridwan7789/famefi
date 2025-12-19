@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "home": "홈",
+    "earn": "수익",
+    "connectWallet": "지갑 연결"
+  },
+  "hero": {
+    "title": "창작. 민팅. 거래. 수익.",
+    "subtitle": "짧은 클립을 온체인 디지털 자산으로 전환하고 솔라나에서 새로운 SocialFi 경제를 열어보세요.",
+    "launchApp": "앱 시작",
+    "mintClip": "클립 민팅",
+    "joinCreators": "크리에이터 참여"
+  },
+  "whatIs": {
+    "title": "FameFi란?",
+    "subtitle": "솔라나 기반의 크리에이터 중심 SocialFi 프로토콜",
+    "card1Title": "크리에이터 SocialFi 프로토콜",
+    "card1Desc": "온체인 소유권과 공정한 수익화로 크리에이터를 지원합니다.",
+    "card2Title": "디지털 클립 자산",
+    "card2Desc": "바이럴 콘텐츠를 거래 가능한 온체인 자산으로 전환하세요.",
+    "card3Title": "소유하고 수익화",
+    "card3Desc": "진정한 소유권은 콘텐츠와 수익을 직접 통제하는 것을 의미합니다.",
+    "card4Title": "솔라나 기반",
+    "card4Desc": "초고속 거래와 거의 제로에 가까운 수수료."
+  },
+  "problem": {
+    "title": "Web2의 문제점",
+    "web2Title": "Web2 플랫폼",
+    "web2Point1": "중앙화된 소유권",
+    "web2Point2": "불공정한 수익 배분",
+    "web2Point3": "크리에이터가 이익을 잃음",
+    "web2Point4": "플랫폼이 콘텐츠를 통제",
+    "web3Title": "FameFi 솔루션",
+    "web3Point1": "온체인 소유권",
+    "web3Point2": "투명한 로열티",
+    "web3Point3": "바이럴 보상 경제",
+    "web3Point4": "당신이 콘텐츠를 소유"
+  },
+  "reward": {
+    "title": "크리에이터 바이럴 보상",
+    "amount": "$1,500",
+    "perClip": "바이럴 클립당",
+    "inFame": "$FAME 토큰"
+  },
+  "ecosystem": {
+    "title": "FameFi 생태계",
+    "subtitle": "모든 참여자를 연결하는 번영하는 경제",
+    "creators": "크리에이터",
+    "collectors": "컬렉터",
+    "communities": "커뮤니티",
+    "brands": "브랜드",
+    "investors": "투자자"
+  },
+  "newsletter": {
+    "title": "최신 소식 받기",
+    "subtitle": "독점 업데이트, 에어드롭, 조기 액세스를 위한 뉴스레터에 가입하세요.",
+    "placeholder": "이메일 입력",
+    "button": "구독",
+    "success": "구독해 주셔서 감사합니다!",
+    "error": "문제가 발생했습니다. 다시 시도해 주세요."
+  },
+  "cta": {
+    "title": "크리에이터 경제의 미래는 온체인입니다.",
+    "subtitle": "혁명에 참여하고 창의성으로 수익을 시작하세요."
+  },
+  "earn": {
+    "heroTitle": "FameFi로 수익 창출",
+    "heroSubtitle": "바이럴 콘텐츠를 실제 보상으로 전환",
+    "programTitle": "크리에이터 바이럴 인센티브 프로그램",
+    "programSubtitle": "바이럴 콘텐츠 제작으로 보상을 받으세요",
+    "reward": "$FAME으로 $1,500 USD 상당",
+    "eligibilityTitle": "자격 기준",
+    "criteria1": "콘텐츠에서 FameFi 사용 또는 언급",
+    "criteria2": "TikTok, X, Instagram 또는 YouTube Shorts에 게시",
+    "criteria3": "최소 10,000 조회수",
+    "criteria4": "검증된 바이럴 / FYP 상태",
+    "criteria5": "FameFi에서 DCA로 콘텐츠 민팅",
+    "whyTitle": "왜 중요한가",
+    "why1Title": "실제 사회적 영향",
+    "why1Desc": "당신의 창의성이 실제 가치와 실제 보상을 창출합니다",
+    "why2Title": "중개인 없음",
+    "why2Desc": "플랫폼 수수료 없는 직접 보상",
+    "why3Title": "온체인 검증",
+    "why3Desc": "투명하고 검증 가능한 보상 분배",
+    "howTitle": "보상 청구 방법",
+    "step1Title": "바이럴 콘텐츠 제작",
+    "step1Desc": "FameFi를 소개하거나 언급하는 콘텐츠 제작",
+    "step2Title": "바이럴 달성",
+    "step2Desc": "10,000+ 조회수와 검증된 바이럴 상태 달성",
+    "step3Title": "DCA 민팅",
+    "step3Desc": "콘텐츠를 디지털 클립 자산으로 민팅",
+    "step4Title": "보상 청구",
+    "step4Desc": "지갑 연결 후 $FAME 토큰 청구"
+  },
+  "footer": {
+    "tagline": "솔라나 기반 크리에이터 SocialFi 프로토콜",
+    "disclaimer": "암호화폐 투자는 높은 위험을 수반합니다. 투자 전 반드시 직접 조사하세요.",
+    "app": "앱 시작",
+    "docs": "문서",
+    "twitter": "트위터",
+    "telegram": "텔레그램",
+    "discord": "디스코드"
+  }
+}
