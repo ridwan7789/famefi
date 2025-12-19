@@ -37,7 +37,23 @@ export default function HowItWorks() {
       <Header />
 
       {/* Hero */}
-      <section className="relative min-h-[60vh] flex items-center justify-center pt-20">
+      <section className="relative min-h-[60vh] flex items-center justify-center pt-20 overflow-hidden">
+        {/* Video Background */}
+        <div className="absolute inset-0 z-0">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover opacity-20"
+            onContextMenu={(e) => e.preventDefault()}
+          >
+            <source src={new URL('@/assets/fameclips.mp4', import.meta.url).href} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="absolute inset-0 bg-gradient-to-b from-background/70 to-background via-background/30"></div>
+        </div>
+
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/3 left-1/3 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
           <div className="absolute bottom-1/3 right-1/3 w-80 h-80 bg-secondary/20 rounded-full blur-3xl animate-pulse delay-1000" />
