@@ -63,7 +63,23 @@ export default function Index() {
       <Header />
 
       {/* Hero */}
-      <section className="relative min-h-screen flex items-center justify-center pt-20">
+      <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        {/* Video Background */}
+        <div className="absolute inset-0 z-0">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover opacity-20"
+            onContextMenu={(e) => e.preventDefault()}
+          >
+            <source src={new URL('@/assets/fameclips.mp4', import.meta.url).href} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="absolute inset-0 bg-gradient-to-b from-background/70 to-background via-background/30"></div>
+        </div>
+
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
           <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-secondary/20 rounded-full blur-3xl animate-pulse delay-1000" />
@@ -818,9 +834,9 @@ export default function Index() {
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
               <div className="font-display text-7xl md:text-8xl font-bold gradient-text mb-2">
-                <CountUp end={1500} prefix="$" duration={2.5} enableScrollSpy scrollSpyOnce />
+                <CountUp end={20000} prefix="$" duration={2.5} enableScrollSpy scrollSpyOnce />
               </div>
-              <p className="text-2xl text-muted-foreground">{t("reward.perClip")}</p>
+              <p className="text-2xl text-muted-foreground">{t("reward.totalProgram")}</p>
               <p className="text-lg text-primary mt-2">{t("reward.inFame")}</p>
             </motion.div>
           </motion.div>

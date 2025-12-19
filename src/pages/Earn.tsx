@@ -81,9 +81,9 @@ export default function HowItWorks() {
             className="glass-card p-12 max-w-3xl mx-auto text-center mb-16"
           >
             <div className="font-display text-6xl md:text-7xl font-bold gradient-text mb-4">
-              <CountUp end={1500} prefix="$" duration={2.5} enableScrollSpy scrollSpyOnce />
+              <CountUp end={20000} prefix="$" duration={2.5} enableScrollSpy scrollSpyOnce />
             </div>
-            <p className="text-2xl text-muted-foreground">Potential earnings per viral clip</p>
+            <p className="text-2xl text-muted-foreground">Total Creator Viral Reward Program</p>
             <p className="text-lg text-primary mt-2">in $FAME tokens</p>
           </motion.div>
 

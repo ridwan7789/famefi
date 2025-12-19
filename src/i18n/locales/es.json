@@ -38,8 +38,8 @@
   },
   "reward": {
     "title": "Recompensa Viral para Creadores",
-    "amount": "$1,500",
-    "perClip": "por clip viral",
+    "amount": "$20,000",
+    "totalProgram": "programa total",
     "inFame": "en tokens $FAME"
   },
   "ecosystem": {
@@ -68,7 +68,7 @@
     "heroSubtitle": "Convierte tu contenido viral en recompensas reales",
     "programTitle": "Programa de Incentivos Virales para Creadores",
     "programSubtitle": "Sé recompensado por crear contenido que se vuelve viral",
-    "reward": "$1,500 USD equivalente en $FAME",
+    "reward": "$20,000 programa total en $FAME",
     "eligibilityTitle": "Criterios de Elegibilidad",
     "criteria1": "Usa o menciona FameFi en el contenido",
     "criteria2": "Publicado en TikTok, X, Instagram o YouTube Shorts",

@@ -38,8 +38,8 @@
   },
   "reward": {
     "title": "크리에이터 바이럴 보상",
-    "amount": "$1,500",
-    "perClip": "바이럴 클립당",
+    "amount": "$20,000",
+    "totalProgram": "총 프로그램",
     "inFame": "$FAME 토큰"
   },
   "ecosystem": {
@@ -68,7 +68,7 @@
     "heroSubtitle": "바이럴 콘텐츠를 실제 보상으로 전환",
     "programTitle": "크리에이터 바이럴 인센티브 프로그램",
     "programSubtitle": "바이럴 콘텐츠 제작으로 보상을 받으세요",
-    "reward": "$FAME으로 $1,500 USD 상당",
+    "reward": "$FAME으로 $20,000 총 프로그램",
     "eligibilityTitle": "자격 기준",
     "criteria1": "콘텐츠에서 FameFi 사용 또는 언급",
     "criteria2": "TikTok, X, Instagram 또는 YouTube Shorts에 게시",

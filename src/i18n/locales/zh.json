@@ -38,8 +38,8 @@
   },
   "reward": {
     "title": "创作者病毒式奖励",
-    "amount": "$1,500",
-    "perClip": "每个病毒式视频",
+    "amount": "$20,000",
+    "totalProgram": "总奖励计划",
     "inFame": "$FAME 代币"
   },
   "ecosystem": {
@@ -68,7 +68,7 @@
     "heroSubtitle": "将您的病毒式内容转化为真实奖励",
     "programTitle": "创作者病毒式激励计划",
     "programSubtitle": "创作病毒式内容获得奖励",
-    "reward": "等值 $1,500 美元的 $FAME",
+    "reward": "$20,000 总奖励计划的 $FAME",
     "eligibilityTitle": "资格标准",
     "criteria1": "内容中使用或提及 FameFi",
     "criteria2": "发布在 TikTok、X、Instagram 或 YouTube Shorts",
