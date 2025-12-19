@@ -30,7 +30,7 @@ export function Footer() {
 
         <div className="mt-8 pt-8 border-t border-border/20 text-center">
           <p className="text-sm text-muted-foreground">{t("footer.disclaimer")}</p>
-          <p className="text-sm text-muted-foreground mt-2">© 2024 FameFi. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground mt-2">© 2025 FameFi. All rights reserved.</p>
         </div>
       </div>
     </footer>
