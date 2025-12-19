@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Twitter, Send, MessageCircle } from "lucide-react";
+import { Twitter } from "lucide-react";
 import fameLogo from "@/assets/fame-logo.jpeg";
 
 export function Footer() {
@@ -18,20 +18,12 @@ export function Footer() {
           </div>
 
           <div className="flex items-center gap-6">
-            <a href="#" className="text-foreground/70 hover:text-primary transition-colors">
-              {t("footer.app")}
-            </a>
-            <a href="#" className="text-foreground/70 hover:text-primary transition-colors">
+            <a href="https://docs.famefi.pro" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
               {t("footer.docs")}
             </a>
-            <a href="#" className="text-foreground/70 hover:text-primary transition-colors flex items-center gap-1">
+            <a href="https://x.com/famefi" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors flex items-center gap-1">
               <Twitter className="h-4 w-4" />
-            </a>
-            <a href="#" className="text-foreground/70 hover:text-primary transition-colors flex items-center gap-1">
-              <Send className="h-4 w-4" />
-            </a>
-            <a href="#" className="text-foreground/70 hover:text-primary transition-colors flex items-center gap-1">
-              <MessageCircle className="h-4 w-4" />
+              X
             </a>
           </div>
         </div>
