@@ -233,6 +233,12 @@ export default function Index() {
                 >
                   Launch App
                 </Button>
+                <Button
+                  className="btn-neon text-lg px-8 py-6 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700"
+                  onClick={() => window.open('https://pump.fun/coin/CKbjhzQk7bp4QM7ddBjjQo9qUhDP1J7jyXZUtKRCpump', '_blank')}
+                >
+                  BUY on Pump.fun
+                </Button>
               </div>
             </motion.div>
 
